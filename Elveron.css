@@ -1,1 +1,418 @@
-	margin: 0px;
+/*
+  Motyw Elveron oparty jest na oryginale 
+  subSilver Theme dla phpBB w wersji 2+
+  Stworzony przez projekt subBlue
+  http://www.subBlue.com
+  Motyw Elveron jest tworzony przez 
+  Ulf Frisk, http://www.elveron.com
+  Michael Schaeffer, http://www.noobsupport.com
+*/
+
+
+
+/* Obramowanie skóry Elverona */
+tabela . bordermaintable { kolor tła :  # 53683F ; wzrost :  100 % ; border-top :  0 pikseli stałe # 000000 ; obramowanie po lewej :  0 pikseli stałe # 000000 ; border-right :  0 pikseli stałe # 000000 ; border-bottom :  0 px stałe # 000000 ; }
+tabela . obramowanie { wysokość :  100 % ; border-top :  0 pikseli stałe # 000000 ; obramowanie po lewej :  0 pikseli stałe # 000000 ; border-right :  0 pikseli stałe # 000000 ; border-bottom :  0 px stałe # 000000 ; }
+td . border_left { wysokość :  100 % ; szerokość :  20 pikseli ; powtarzanie w tle : powtarzanie-y; obraz w tle :  url (images/bg_left.gif); }
+td . border_left_logo { wysokość :  61 px ; szerokość :  20 pikseli ; powtarzanie w tle : powtarzanie-y; }
+td . border_right { wysokość :  100 % ; szerokość :  20 pikseli ; powtarzanie w tle : powtarzanie-y; obraz w tle :  url (images/bg_right.gif); }
+td . border_right_logo { wysokość :  61 px ; szerokość :  20 pikseli ; powtarzanie w tle : powtarzanie-y; obraz w tle :  url (images/bg_right_logo.gif); }
+
+/* Skórki Elverona */
+tabela . maintable { margines-lewy :  0 px ; kolor tła : przezroczysty; szerokość :  701 px ; wzrost :  100 % ; border-top :  0 pikseli stałe # 000000 ; obramowanie po lewej :  0 pikseli stałe # 000000 ; border-right :  0 pikseli stałe # 000000 ; border-bottom :  0 pxstałe # 000000 ; }
+tabela . maintableinner { margines lewy :  0 px ; kolor tła : przezroczysty; szerokość :  740 pikseli ; wzrost :  100 % ; border-top :  0 pikseli stałe # 000000 ; obramowanie po lewej :  0 pikseli stałe # 000000 ; border-right :  0 pikseli stałe # 000000 ; border-bottom :  0 pxstałe # 000000 ; }
+tabela . maintablebody 	{ kolor tła : przezroczysty; obramowanie :  0 px  # 000000 stałe; }
+td . header_background { border-top :  0 px solid # 113311 ; obramowanie po lewej :  0 pikseli jednolita czerń; border-right :  0 pikseli jednolita czerń; border-bottom :  0 pikseli stałe # 113311 ; wysokość :  61 px ; powtarzanie w tle : powtarzanie-x; obraz w tle :  url (images/logo_background.gif); }
+td . logo { border-top :  0 px solid # 113311 ; obramowanie po lewej :  0 pikseli jednolita czerń; border-right :  0 pikseli jednolita czerń; border-bottom :  0 pikseli stałe # 113311 ; wysokość :  61 px ; background-repeat : bez powtórzeń; obraz w tle :  url (obrazy/logo.gif); }
+td . footer_background { border-top :  0 px solid # 113311 ; obramowanie po lewej :  0 pikseli jednolita czerń; border-right :  0 pikseli jednolita czerń; border-bottom :  0 pikseli stałe # 113311 ; wysokość :  32 px ; powtarzanie w tle : powtarzanie-x; obraz w tle :  url (images/footer.gif);}
+
+/* Górne menu skórki Elverona */
+. topmenu  a { text-decoration : brak; }
+. topmenu  a : hover { text-decoration : brak; }
+. topmenu  td { spacja : nowrap; grubość czcionki : pogrubiona; rodzina czcionek : Verdana , Arial , Helvetica , sans-serif; rozmiar czcionki :  10 px ; kolor :  # DFDFDF ; }
+td . b_spacer { szerokość :  5 px ; wysokość :  25 px ; obramowanie :  0 pikseli ; }
+td . b_center { wysokość :  25 px ; obramowanie :  0 pikseli ; background-image :  url (images/button_middle.gif); }
+td . b_right { szerokość :  7 px ; wysokość :  25 px ; obramowanie :  0 pikseli ; background-image :  url (images/button_right.gif); }
+td . b_left_red { szerokość :  22 px ; wysokość :  25 px ; obramowanie :  0 pikseli ; obraz w tle :  url (images/button_left_red.gif); }
+td . b_left_grey { szerokość :  22 px ; wysokość :  25 px ; obramowanie :  0 pikseli ; obraz w tle :  url (images/button_left_grey.gif); }
+td . b_left_normal { szerokość :  22 px ; wysokość :  25 px ; obramowanie :  0 pikseli ; background-image :  url (images/button_left_normal.gif); }
+
+
+ /* Ogólny styl strony. Kolory paska przewijania widoczne tylko w IE5.5+ */
+ciało {
+	kolor tła :  # 000000 ;
+	margines :  0 px ;
+	obraz w tle :  url (images/bg.gif);
+	kolor-twarzy-paska przewijania :  # 212121 ;
+	kolor podświetlenia paska przewijania :  # 404040 ;
+	kolor cienia paska przewijania :  # 000000 ;
+	pasek przewijania-3dlight-kolor :  # 616161 ;
+	scrollbar-strzałka-kolor :   # A1A1A1 ;
+	kolor paska przewijania :  # 000000 ;
+	pasek przewijania-ciemny-kolor :  # 000000 ;
+}
+
+/* Ogólne rodziny czcionek dla wspólnych znaczników */
+font , th , td , p { font-family : Verdana , Arial , Helvetica , sans-serif; }
+a : link , a : aktywny , a : odwiedzony { color  :  # DFDFDF ; dekoracja tekstu :  brak ; }
+a : hover 		{ text-decoration : podkreślenie; kolor  :  # FFFFFF ; }
+hr 	{ wysokość :  0 px ; obramowanie : pełne # CCCCCC  0 px ; szerokość górnego obramowania :  1 px ; }
+
+
+/* To jest kolor linii obramowania i tła wokół całej strony */
+. linia ciała 	{ kolor tła :  # 000000 ; obramowanie :  1 px  # 212121 stałe; }
+
+/* To jest zarys wokół głównych stołów na forum */
+. forumline { border :  1 px solid # 242D1C ; tło :  # 242D1C ; margines górny :  1 px ; margines-dolny :  1 px ; }
+
+
+/* Kolory i tła głównych komórek tabeli */
+td . row1 	{ kolor tła :  # 445533 ; }
+td . row2 	{ kolor tła :  # 445533 ; }
+td . row3 	{ kolor tła :  # 334422 ; }
+
+
+/*
+  To jest dla komórki tabeli nad tematami, postami i ostatnimi postami na stronie index.php
+  Domyślnie jest to zanikające stopniowane srebrne tło.
+  Możesz jednak zastąpić to mapą bitową specyficzną dla każdego forum
+*/
+td . awanturniczy {
+		kolor tła :  # 000000 ;
+}
+
+/* Komórki nagłówka - niebieskie i srebrne tło gradientowe */
+th 	{
+	kolor :  # FFFFFF ; rozmiar czcionki :  12 pikseli ; grubość czcionki  :  pogrubienie ;
+	kolor tła :  # 334422;
+}
+
+td . kot , td . głowa kota , td . boki kota , td . catLeft , td . catRight , td . kotDno {
+    kolor tła : # 000000 ; obramowanie :  # FFCC66 ; styl obramowania : solidny;
+}
+
+
+/*
+  Ustawienie dodatkowych ładnych obramowań wewnętrznych dla głównych komórek tabeli.
+  Nazwy wskazują, po których stronach będzie granica.
+  Nie martw się, jeśli tego nie rozumiesz, po prostu to zignoruj ​​:-)
+*/
+td . kot , td . głowa kota , td . catBottom { szerokość obramowania :  0 px  0 px  0 px  0 px ; }
+th . Głowa , th . thBoki , th . th Góra , th . thLewy , th . Prawda , th . thDolny , th . thCornerL , th . thCornerR { grubość czcionki : pogrubienie; obramowanie :  # FFCC66 ; styl obramowania : solidny; }
+td . row3Right , td . spaceRow { kolor tła :  # 334422 ; obramowanie :  # FFCC66 ; styl obramowania : solidny; }
+
+th . Głowa , td . głowa kota { kolor :  # FFFFFF ; rozmiar czcionki :  11 pikseli ; szerokość obramowania :  0 px  0 px  0 px  0 px ;  tło :  # 242D1C ; }
+th . Strony , td . boki kota , td . spaceRow 	 { szerokość obramowania :  0 px  0 px  0 px  0 px ;  tło :  # 242D1C ; }
+th . Prawda , td . catRight , td . row3Right 	 { kolor :  # FFFFFF ; szerokość obramowania :  0 px  0 px  0 px  0 px ;  tło :  # 334422 ; }
+th . thLeft , td . catLeft 	  { padding-top :  3 px ; dopełnienie w prawo :  10 px ; padding-bottom :  3 px ; dopełnienie lewe :  20 px ; kolor :  # FFFFFF ; szerokość obramowania :  0 px  0 px  0 px  0 px ; tło :  # 242D1C ; obraz tła :  url(obrazy/box_left_icon.gif); background-repeat : bez powtórzeń; pozycja tła : lewa; }
+th . thspód , td . catBottom   { szerokość obramowania :  0 px  0 px  0 px  0 px ;  tło :  # 242D1C ; }
+th . góra 	 { kolor :  # FFFFFF ; rozmiar czcionki :  11 pikseli ; szerokość obramowania :  0 px  0 px  0 px  0 px ;  tło :  # 242D1C ; }
+th . thCornerL { kolor :  # FFFFFF ; rozmiar czcionki :  11 pikseli ; szerokość obramowania :  0 px  0 px  0 px  0 px ;  tło :  # 242D1C ; }
+th . thCornerR { kolor :  # FFFFFF ; rozmiar czcionki :  11 pikseli ; szerokość obramowania :  0 px  0 px  0 px  0 px ;  tło :  # 242D1C ; }
+
+
+/* Największy tekst użyty w tytule strony indeksu i tytule tematu itp. */
+. maintitle , h1 , h2 { rozmiar czcionki :  20 px ; rodzina czcionek :  "Verdana" , Verdana , Arial , Helvetica , sans-serif; dekoracja tekstu : brak; kolor  :  # FFFFFF ; }
+
+
+/* Tekst ogólny */
+. gen { rozmiar czcionki  : 12px; }
+. genmed { rozmiar czcionki  : 11px; }
+. gensmall { rozmiar czcionki  : 10px; }
+. gen , . zmodyfikowana , . gensmall { kolor  :  # FFFFCC ; dekoracja tekstu :  brak ; }
+. gen , a . genmed , a . gensmall { kolor :  # AEAEAE ; dekoracja tekstu : brak; }
+. gen : odwiedził , a . genmed : odwiedzony , a . gensmall : odwiedzony 	{ color :  # AEAEAE ; dekoracja tekstu : brak; }
+. gen : najechanie , a . genmed : unosić się , a . gensmall : hover 	{ color :  # FFFFCC ; dekoracja tekstu : brak; }
+
+
+/* Linki do rejestru, logowania, wyszukiwania itp. u góry strony */
+. MAINMENU 		{ rozmiar czcionki  : 11px; kolor  :  # FFFFCC ; }
+. menu główne 		{ text-decoration : brak; kolor  :  # AEAEAE ; }
+. menu główne : odwiedzone { text-decoration : brak; kolor  :  # AEAEAE ; }
+. menu główne : hover { text-decoration : brak; kolor  :  # FFFFFF ; }
+
+
+/* Tytuły kategorii forum */
+. cattitle 		{ grubość czcionki : pogrubienie; rozmiar czcionki :  11 pikseli ; odstępy między literami :  1 px ; kolor  :  # FFFFFF ; }
+. cattitle 		{ text-decoration : brak; kolor  :  # DFDFDF ; }
+. tytuł kota : odwiedzony { text-decoration : brak; kolor  :  # DFDFDF ; }
+. tytuł kota : najechać {   kolor :  # FFFFFF ; dekoracja tekstu : brak; }
+
+
+/* Tytuł forum: Tekst i link do forów użytych w: index.php */
+. link do forum 		{ grubość czcionki : pogrubienie; rozmiar czcionki :  11 pikseli ; kolor  :  # AEAEAE ; }
+. link do forum  	{ dekoracja tekstu : brak; kolor  :  # AEAEAE ; }
+. forumlink : odwiedzono { text-decoration : brak; kolor  :  # AEAEAE ; }
+. forumlink : hover { text-decoration : brak; kolor  :  # FFFFFF ; }
+
+
+/* Używane do tekstu nawigacji (strona 1,2,3 itd.) i paska nawigacji na forum */
+. nav 			{ grubość czcionki : pogrubienie; rozmiar czcionki :  11 pikseli ; kolor  :  # FFFFFF ;}
+. nav 			{ dekoracja tekstu : brak; kolor  :  # AEAEAE ; }
+. nav : odwiedzono { text-decoration : brak; kolor  :  # AEAEAE ; }
+. nav : hover 		{ text-decoration : brak; kolor  :  # FFFFFF ; }
+
+
+/* tytuły tematów: można też określić kolor wyświetlanych linków */
+. tytuł tematu 			{ grubość czcionki : pogrubienie; rozmiar czcionki :  11 pikseli ; kolor  :  # FFDDAA ; }
+. tytuł tematu : link    { text-decoration : brak; kolor  :  # FFFFCC ; }
+. tytuł tematu : odwiedzony { text-decoration : brak; kolor  :  # FFFFCC ; }
+. tytuł tematu : hover 	{ text-decoration : podkreślenie; kolor  :  # FFFFFF ; }
+
+
+/* Nazwa plakatu w viewmsg.php i viewtopic.php oraz w innych miejscach */
+. nazwa 			{ rozmiar-czcionki  : 11px; kolor  :  # FFFFFF ;}
+
+/* Lokalizacja, liczba postów, data postu itp */
+. postdetails 		{ rozmiar czcionki  : 10px; kolor  :  # FFFFCC ; }
+
+
+/* Treść postów (treść tekstu) */
+. postbody { rozmiar czcionki  : 12px; kolor :  # FFFFCC ; }
+. postlink : link 	{ text-decoration : brak; kolor  :  # AEAEAE ; }
+. postlink : odwiedzony { text-decoration : brak; kolor  :  # AEAEAE ; }
+. postlink : hover { text-decoration : brak; kolor  :  # FFFFFF ; }
+
+
+/* Cytat i bloki kodu */
+. kod {
+	rodzina czcionek : Courier ,  'Courier New' , sans-serif; rozmiar czcionki :  11 pikseli ; kolor :  # 00CC33 ;
+	kolor tła :  # 616161 ; obramowanie :  # BFBFBF ; styl obramowania : solidny;
+	szerokość-obramowania po lewej :  1 px ; szerokość górnego obramowania :  1 px ; szerokość-prawej-obramowania :  1 px ; border-bottom-width :  1 px
+}
+
+. cytat {
+	rodzina czcionek : Verdana , Arial , Helvetica , sans-serif; rozmiar czcionki :  11 pikseli ; kolor :  # FFFFCC ; wysokość linii :  125 % ;
+	kolor tła : przezroczysty; obramowanie :  # BFBFBF ; styl obramowania : solidny;
+	szerokość-obramowania po lewej :  1 px ; szerokość górnego obramowania :  1 px ; szerokość-prawej-obramowania :  1 px ; border-bottom-width :  1 px
+}
+
+/* Informacje o prawach autorskich i dolnej części */
+. prawa autorskie { rozmiar czcionki :  10 px ; rodzina czcionek : Verdana , Arial , Helvetica , sans-serif; kolor :  # FFFFFF ; odstępy między literami :  -1 px ; }
+. prawa autorskie { kolor :  # DFDFDF ; dekoracja tekstu : brak; }
+. prawa autorskie : link { kolor  :  # DFDFDF ; dekoracja tekstu :  brak ; }
+. copyright : odwiedzono { kolor  :  # DFDFDF ; dekoracja tekstu :  brak ; }
+. copyright : najechac { kolor :  # FFFFFF ; dekoracja tekstu : podkreślenie; }
+
+
+/* Elementy formularza */
+input , textarea ,  wybierz {
+	kolor  :  # FFFFFF ;
+	czcionka :  normalna 11px Verdana ,  Arial ,  Helvetica ,  sans-serif ;
+	kolor-obramowania  :  # FFFFFF ;
+}
+
+/* Kolor tła pól tekstowych */
+wejście . post ,  obszar tekstowy . opublikuj ,  wybierz {
+	kolor tła  :  # 353E2C;
+}
+
+input { wcięcie tekstu  : 2px; }
+
+/* Przyciski używane do stylizacji bbCode w wiadomościach */
+wejście . przycisk {
+	kolor tła  :  # 353E2C;
+	kolor  :  # FFFFCC ;
+	rozmiar czcionki : 11px; rodzina czcionek :  Verdana ,  Arial ,  Helvetica ,  sans-serif ;
+}
+
+/* Opcja głównego przycisku przesyłania */
+wejście . główna opcja {
+	kolor tła  :  # 353E2C;
+	grubość czcionki  :  pogrubienie ;
+}
+
+/* Przycisk przesyłania bez pogrubienia */
+wejście . opcja litowa {
+	kolor tła  :  # 353E2C;
+	grubość czcionki  :  normalna ;
+}
+
+/* To jest wiersz na stronie publikowania, który pokazuje najazd
+  linia pomocy. W rzeczywistości jest to pole tekstowe, ale jeśli ustawione tak samo
+  kolor jako tło nikt nie będzie wiedział ;)
+*/
+. infolinia { kolor tła :  # 212121 ; styl obramowania : brak; }
+
+
+/* Importuj fantazyjne style tylko dla IE (NS4.x nie używa funkcji @import) */
+@import  URL ( "formIE.css" );
+
+. f__footer__skróty {
+  wyświetlacz : blok;
+  margines :  5 px  0 ;
+  wyrównanie tekstu : środek;
+}
+. f__stopka__skróty . skróty-tytuł  , . f__stopka__skróty . skróty-link {
+  wyświetlacz : inline-block;
+  grubość czcionki : pogrubiona;
+  rozmiar czcionki :  10 px ;
+  margines :  0 ;
+  dopełnienie :  2 px ;
+  dekoracja tekstu : brak;
+  wysokość linii :  1 em ;
+
+}
+. f__stopka__skróty . skróty-link {
+  grubość czcionki : normalna;
+}
+. f__footer__skróty  a : po {
+  treść :  '|' ;
+  margines lewy :  5 px ;
+}
+. f__footer__skróty  a : ostatnie dziecko : po {
+  zawartość :  '' ;
+}
+. pp-tac {
+	wyświetlacz : blok;
+	pozycja : ustalona;
+	góra :  0 ;
+	lewy :  0 ;
+	prawo :  0 ;
+	dół :  0 ;
+	indeks z :  100000 ;
+}
+. pp-tac  * {
+	-webkit-box-sizing : border-box;
+  -moz-box-sizing : border-box;
+  rozmiar pudełka : obramowanie-pudełko;
+}
+. pp-tac . ta-c__nakładka {
+	wyświetlacz : blok;
+	pozycja : ustalona;
+	góra :  0 ;
+	lewy :  0 ;
+	prawo :  0 ;
+	dół :  0 ;
+	kolor tła :  rgba ( 0 , 0 , 0 , .6 );
+}
+
+. pp-tac . ta-c__box {
+	wyświetlacz : blok;
+	margines :  100 pikseli auto;
+	maksymalna szerokość :  600 pikseli ;
+	/*wysokość: 600px;*/
+	kolor tła :  # fff ;
+	pozycja : względna;
+	promień obramowania :  4 px ;
+}
+@media ( maksymalna szerokość :  767 px ) {
+	. pp-tac . ta-c__box {
+		margines :  20 px  10 px ;
+	}
+}
+. pp-tac . ta-c__box-header {
+	wyświetlacz : blok;
+	wypełnienie :  20 px ;
+	border-bottom :  stały biały dym 1 px ;
+	dopełnienie w prawo :  40 px ;
+	pozycja : względna;
+}
+. pp-tac . ta-c__box-header . tekst-nagłówka {
+	wyświetlacz : inline-block;
+	rozmiar czcionki :  20 px ;
+	wysokość linii :  1,4 em ;
+	grubość czcionki : pogrubiona;
+}
+. pp-tac . ta-c__box-header . zakres tekstu nagłówka  {
+	wyświetlacz : inline-block;
+}
+@media ( maksymalna szerokość :  767 px ) {
+	. pp-tac . ta-c__box-header . tekst-nagłówka {
+		rozmiar czcionki :  16 pikseli ;
+	}
+}
+. pp-tac . ta-c__treść-pudełka {
+	wyświetlacz : blok;
+	wypełnienie :  20 px ;
+}
+
+. pp-tac . ta-c__treść-pudełka . zawartość wewnętrzna {
+	wyświetlacz : blok;
+}
+
+. pp-tac . ta-c__treść-pudełka . treść-wewnętrzna  p ,
+. pp-tac . ta-c__treść-pudełka . treść-wewnętrzna  a {
+	wyświetlacz : blok;
+	rozmiar czcionki :  16 pikseli ;
+	wysokość linii :  1,4 em ;
+	margines :  0 ;
+	dopełnienie :  0 ;
+}
+. pp-tac . ta-c__treść-pudełka . treść-wewnętrzna  a {
+	wyświetlacz : inline-block;
+	grubość czcionki : pogrubiona;
+	kolor :  # 58abf9 ;
+}
+@media ( maksymalna szerokość :  767 px ) {
+	. pp-tac . ta-c__treść-pudełka . treść-wewnętrzna  p ,
+	. pp-tac . ta-c__treść-pudełka . treść-wewnętrzna  a {
+		rozmiar czcionki :  12 pikseli ;
+	}
+
+}
+. pp-tac . ta-c__box-bottom {
+	wyświetlacz : blok;
+	wypełnienie :  20 px ;
+	border-top :  stały biały dym 1 px ;
+}
+
+. pp-tac . ta-c__box-bottom . dolny wewnętrzny {
+	wyrównanie tekstu : prawo;
+}
+
+. pp-tac . ta-c__box__btn {
+	wyświetlacz : inline-block;
+	wysokość :  50 px ;
+	wysokość linii : normalna;
+	dopełnienie :  10 px  30 px ;
+	kolor tła :  # 39b518 ;
+	border :  1 px stałe # 39b518 ;
+	zarys : brak;
+	promień obramowania :  4 px ;
+	margines lewy :  10 px ;
+	cień pudełka : brak;
+	-webkit-box-shadow : brak;
+}
+. pp-tac . ta-c__box__btn : najedź {
+	kolor tła :  # 4acb27 ;
+}
+@media ( maksymalna szerokość :  767 px ) {
+	. pp-tac . ta-c__box__btn {
+		dopełnienie :  10 px  15 px ;
+	}
+}
+. pp-tac . ta-c__box__btn . btn--druga {
+	kolor tła :  # 292929 ;
+	obramowanie :  1 px stały # 292929 ;
+}
+. pp-tac . ta-c__box__btn . btn--sekunda : najedź {
+	kolor tła :  # 4c4c4c ;
+}
+. pp-tac . ta-c__box__btn . ta-c__box__btn__etykieta {
+	wyświetlacz : inline-block;
+	wysokość linii :  30 pikseli ;
+	grubość czcionki : pogrubiona;
+	rozmiar czcionki :  15 px ;
+	kolor :  # fff ;
+}
+
+. pp-tac . ta-c__box . ta-c__btn-zamknij {
+	pozycja : bezwzględna;
+	góra :  10 pikseli ;
+	po prawej :  10 pikseli ;
+}
+. pp-tac . ta-c__box . ta-c__btn-zamknij {
+	wyświetlacz : blok;
+	szerokość :  16 pikseli ;
+	wysokość :  16 px ;
+	tła obrazu :  URL ( 'danych: obrazu / PNG; base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAABlElEQVRYhb2YwW2DQBAAx5d8ePJDeVIBUlKCU4JTAikhKSGUYEpIvvnZLbgE + 5snLeTBnQN4Oe4WyEony + jYGVnevYVNURQIsbWfJ6CRNkREbtfFrl6YwfcU + AQOdp2Bxxnw0uZwuUqfQGo37oRrGokS2A + u7YcSTsAH0khIcFHCBAJiJHzwGwkDvAUmDpEIgXcldndZlh0CbwBIaP8jR + BnBtxFaogvM + mX0MABGgNUihu7Emo4UN1bgRyhRgMlUiX8GTi5MnwFakWiWXDoNyKthBo + FFhb4gYuCawlIcLHBJaWGIX7BJaS8MKnBJzEcYbAuw8eIlDyN5xo4oOJc8YnoO1w3Zg8wMYEloAHSUgCS8InJYYCa8C9El2BNeGjEk7gP + CihJkBb4An9KfoAcjdSJYo4K7DfQMPxI / uCZC4qVgLd6Ft27khrtX6ertG4miAl5GEMXCNRA1UbiqeShyyJ0aitvuuZegDxMBDJK7wrsAYSAPvSgxH / h4cYCO8H0hpn35S4AvhmT4ytrQlerH5evELoDp4C9SASckAAAAASUVORK5CYII =' );
+	pozycja tła : środek centrum;
+	background-repeat : bez powtórzeń;
+	-webkit-background-size :  16 px auto;
+	rozmiar tła :  16 pikseli auto;
+	wysokość linii : normalna;
+	dopełnienie :  0 ;
+	margines :  0 ;
+
+}
