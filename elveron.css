@@ -238,3 +238,29 @@ input.liteoption {
 
 /* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
 @import url("formIE.css");
+
+.f__footer__shortcuts {
+  display: block;
+  margin: 5px 0;
+  text-align: center;
+}
+.f__footer__shortcuts .shortcuts-title , .f__footer__shortcuts .shortcuts-link {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0;
+  padding: 2px;
+  text-decoration: none;
+  line-height: 1em;
+
+}
+.f__footer__shortcuts .shortcuts-link {
+  font-weight: normal;
+}
+.f__footer__shortcuts a:after {
+  content: '|';
+  margin-left: 5px;
+}
+.f__footer__shortcuts a:last-child:after {
+  content: '';
+}
