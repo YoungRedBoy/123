@@ -1,0 +1,246 @@
+/*
+  Motyw Elveron oparty jest na oryginale
+  subSilver Theme dla phpBB w wersji 2+
+  Stworzony przez projekt subBlue
+  http://www.subBlue.com
+
+  Motyw Elveron został stworzony przez
+  Ulf Frisk, http://www.elveron.com
+  Michael Schaeffer, http://www.noobsupport.com
+*/
+
+
+
+/* Obramowanie skóry Elverona */
+table.bordermaintable { kolor tła: #53683F; wzrost: 100%; krawędź górna: 0px stałe #000000; obramowanie po lewej: 0px stałe #000000; obramowanie po prawej: 0px stałe #000000; border-bottom: 0px stałe #000000; }
+table.border { wysokość: 100%; krawędź górna: 0px stałe #000000; obramowanie po lewej: 0px stałe #000000; obramowanie po prawej: 0px stałe #000000; border-bottom: 0px stałe #000000; }
+td.border_left { wysokość: 100%; szerokość: 20px; powtarzanie w tle: powtarzanie-y; obraz w tle: url(images/bg_left.gif); }
+td.border_left_logo { wysokość: 61px; szerokość: 20px; powtarzanie w tle: powtarzanie-y; }
+td.border_right { wzrost: 100%; szerokość: 20px; powtarzanie w tle: powtarzanie-y; obraz w tle: url(images/bg_right.gif); }
+td.border_right_logo { wysokość: 61px; szerokość: 20px; powtarzanie w tle: powtarzanie-y; obraz w tle: url(images/bg_right_logo.gif); }
+
+/* Skórki Elverona */
+table.maintable { margines lewy: 0px; kolor tła: przezroczysty; szerokość: 701px; wzrost: 100%; krawędź górna: 0px stałe #000000; obramowanie po lewej: 0px stałe #000000; obramowanie po prawej: 0px stałe #000000; border-bottom: 0px stałe #000000; }
+table.maintableinner { margines lewy: 0px; kolor tła: przezroczysty; szerokość: 740px; wzrost: 100%; krawędź górna: 0px stałe #000000; obramowanie po lewej: 0px stałe #000000; obramowanie po prawej: 0px stałe #000000; border-bottom: 0px stałe #000000; }
+table.maintablebody { kolor tła: przezroczysty; obramowanie: 0px #000000 stałe; }
+td.header_background { border-top: 0px solid #113311; obramowanie po lewej: 0px jednolita czerń; obramowanie po prawej: 0px jednolita czerń; obramowanie-dół: 0px stałe #113311; wysokość: 61px; powtarzanie w tle: powtarzanie-x; obraz w tle: url(images/logo_background.gif); }
+td.logo { border-top: 0px solid #113311; obramowanie po lewej: 0px jednolita czerń; obramowanie po prawej: 0px jednolita czerń; obramowanie-dół: 0px stałe #113311; wysokość: 61px; powtarzanie w tle: bez powtórzeń; obraz w tle: url(obrazy/logo.gif); }
+td.footer_background { border-top: 0px solid #113311; obramowanie po lewej: 0px jednolita czerń; obramowanie po prawej: 0px jednolita czerń; obramowanie-dół: 0px stałe #113311; wysokość: 32px; powtarzanie w tle: powtarzanie-x; obraz w tle: url(obrazy/stopka.gif);}
+
+/* Górne menu skórki Elverona */
+.topmenu a { dekoracja tekstu: brak; }
+.topmenu a:hover { dekoracja tekstu: brak; }
+.topmenu td { spacja: nowrap; grubość czcionki: pogrubiona; rodzina czcionek: Verdana, Arial, Helvetica, bezszeryfowa; rozmiar czcionki: 10px; kolor: #DFDFDF; }
+td.b_spacer { szerokość: 5px; wysokość: 25px; obramowanie: 0px; }
+td.b_center { wysokość: 25px; obramowanie: 0px; obraz w tle: url(images/button_middle.gif); }
+td.b_right { szerokość: 7px; wysokość: 25px; obramowanie: 0px; obraz w tle: url(images/button_right.gif); }
+td.b_left_red { szerokość: 22px; wysokość: 25px; obramowanie: 0px; obraz w tle: url(images/button_left_red.gif); }
+td.b_left_grey { szerokość: 22px; wysokość: 25px; obramowanie: 0px; obraz w tle: url(images/button_left_grey.gif); }
+td.b_left_normal { szerokość: 22px; wysokość: 25px; obramowanie: 0px; obraz w tle: url(images/button_left_normal.gif); }
+
+
+ /* Ogólny styl strony. Kolory paska przewijania widoczne tylko w IE5.5+ */
+ciało {
+	kolor tła: #000000;
+	margines: 0px;
+	obraz w tle: url(obrazy/bg.gif);
+	kolor twarzy paska przewijania: #212121;
+	kolor podświetlenia paska przewijania: #404040;
+	kolor cienia paska przewijania: #000000;
+	pasek przewijania-3dlight-kolor: #616161;
+	pasek przewijania-strzałka-kolor: #A1A1A1;
+	kolor paska przewijania: #000000;
+	pasek przewijania-ciemny-kolor: #000000;
+}
+
+/* Ogólne rodziny czcionek dla wspólnych znaczników */
+czcionka, td, p { rodzina czcionek: Verdana, Arial, Helvetica, bezszeryfowa; }
+a:link,a:aktywny,a:odwiedzony { kolor : #DFDFDF; dekoracja tekstu: brak; }
+a:hover { dekoracja tekstu: podkreślenie; kolor : #FFFFFF; }
+godz. { wysokość: 0px; obramowanie: stałe #CCCCCC 0px; szerokość górnego obramowania: 1px; }
+
+
+/* To jest kolor linii obramowania i tła wokół całej strony */
+.bodyline { kolor tła: #000000; obramowanie: 1px #212121 stały; }
+
+/* To jest zarys wokół głównych stołów na forum */
+.forumline { obramowanie: 1px stałe #242D1C; tło: #242D1C; margines górny: 1px; margines-dolny: 1px; }
+
+
+/* Kolory i tła głównych komórek tabeli */
+td.row1 { kolor tła: #445533; }
+td.row2 { kolor tła: #445533; }
+td.row3 { kolor tła: #334422; }
+
+
+/*
+  To jest dla komórki tabeli nad tematami, postami i ostatnimi postami na stronie index.php
+  Domyślnie jest to zanikające stopniowane srebrne tło.
+  Możesz jednak zastąpić to mapą bitową specyficzną dla każdego forum
+*/
+td.rowpic {
+		kolor tła: #000000;
+}
+
+/* Komórki nagłówka - niebieskie i srebrne tło gradientowe */
+th {
+	kolor: #FFFFFF; rozmiar czcionki: 12px; grubość czcionki : pogrubiona;
+	kolor tła: #334422;
+}
+
+td.cat,td.catGłowa,td.catBoki,td.catLewy,td.catPrawy,td.catDół {
+    kolor tła:#000000; granica: #FFCC66; styl obramowania: solidny;
+}
+
+
+/*
+  Ustawienie dodatkowych ładnych obramowań wewnętrznych dla głównych komórek tabeli.
+  Nazwy wskazują, po których stronach będzie granica.
+  Nie martw się, jeśli tego nie rozumiesz, po prostu to zignoruj ​​:-)
+*/
+td.cat,td.catHead,td.catBottom { szerokość obramowania: 0px 0px 0px 0px; }
+th.thhead,th.th Sides,th.thGóra,th.thLeft,th.thRight,th.thBottom,th.thCornerL,th.thCornerR { grubość czcionki: bold; granica: #FFCC66; styl obramowania: solidny; }
+td.row3Right,td.spaceRow { kolor tła: #334422; granica: #FFCC66; styl obramowania: solidny; }
+
+th.thhead,td.cathead { kolor: #FFFFFF; rozmiar czcionki: 11px; szerokość obramowania: 0px 0px 0px 0px; tło: #242D1C; }
+th.thSides,td.catSides,td.spaceRow { szerokość obramowania: 0px 0px 0px 0px; tło: #242D1C; }
+th.thRight,td.catRight,td.row3Right { color: #FFFFFF; szerokość obramowania: 0px 0px 0px 0px; tło: #334422; }
+th.thLeft,td.catLeft { padding-top: 3px; dopełnienie-prawo: 10px; dopełnienie-dolne: 3px; dopełnienie lewe: 20px; kolor: #FFFFFF; szerokość obramowania: 0px 0px 0px 0px; tło: #242D1C; obraz w tle: url(images/box_left_icon.gif); powtarzanie w tle: bez powtórzeń; pozycja tła: lewa; }
+th.thBottom,td.catBottom { szerokość obramowania: 0px 0px 0px 0px; tło: #242D1C; }
+th.thTop { kolor: #FFFFFF; rozmiar czcionki: 11px; szerokość obramowania: 0px 0px 0px 0px; tło: #242D1C; }
+th.thCornerL { kolor: #FFFFFF; rozmiar czcionki: 11px; szerokość obramowania: 0px 0px 0px 0px; tło: #242D1C; }
+th.thCornerR { kolor: #FFFFFF; rozmiar czcionki: 11px; szerokość obramowania: 0px 0px 0px 0px; tło: #242D1C; }
+
+
+/* Największy tekst użyty w tytule strony indeksu i tytule tematu itp. */
+.maintitle,h1,h2 { rozmiar czcionki: 20px; rodzina czcionek: „Verdana”, Verdana, Arial, Helvetica, bezszeryfowa; dekoracja tekstu: brak; kolor : #FFFFFF; }
+
+
+/* Tekst ogólny */
+.gen { rozmiar czcionki : 12px; }
+.genmed { rozmiar czcionki : 11px; }
+.gensmall { rozmiar czcionki : 10px; }
+.gen,.genmed,.gensmall { kolor : #FFFFCC; dekoracja tekstu: brak; }
+a.gen,a.genmed,a.gensmall { kolor: #AEAEAE; dekoracja tekstu: brak; }
+a.gen:odwiedzone,a.genmed:odwiedzone,a.gensmall:odwiedzone { color: #AEAEAE; dekoracja tekstu: brak; }
+a.gen:hover,a.genmed:hover,a.gensmall:hover { kolor: #FFFFCC; dekoracja tekstu: brak; }
+
+
+/* Linki do rejestru, logowania, wyszukiwania itp. u góry strony */
+.mainmenu { rozmiar czcionki : 11px; kolor : #FFFFCC; }
+a.mainmenu { dekoracja tekstu: brak; kolor : #AEAEAE; }
+a.mainmenu:visited { text-decoration: none; kolor : #AEAEAE; }
+a.mainmenu:hover{ text-decoration: brak; kolor : #FFFFFF; }
+
+
+/* Tytuły kategorii forum */
+.cattitle { grubość czcionki: pogrubienie; rozmiar czcionki: 11px ; odstęp między literami: 1px; kolor : #FFFFFF; }
+a.cattitle { dekoracja tekstu: brak; kolor: #DFDFDF; }
+a.cattitle:visited { text-decoration: brak; kolor: #DFDFDF; }
+a.cattitle:najechanie{ kolor: #FFFFFF; dekoracja tekstu: brak; }
+
+
+/* Tytuł forum: Tekst i link do forów użytych w: index.php */
+.forumlink { grubość czcionki: pogrubienie; rozmiar czcionki: 11px; kolor : #AEAEAE; }
+a.forumlink { dekoracja tekstu: brak; kolor : #AEAEAE; }
+a.forumlink:visited { dekoracja tekstu: brak; kolor : #AEAEAE; }
+a.forumlink:hover{ dekoracja tekstu: brak; kolor : #FFFFFF; }
+
+
+/* Używane do tekstu nawigacji (strona 1,2,3 itd.) i paska nawigacji na forum */
+.nav { grubość czcionki: pogrubienie; rozmiar czcionki: 11px; kolor : #FFFFFF;}
+a.nav { dekoracja tekstu: brak; kolor : #AEAEAE; }
+a.nav:visited { text-decoration: brak; kolor : #AEAEAE; }
+a.nav:hover { dekoracja tekstu: brak; kolor : #FFFFFF; }
+
+
+/* tytuły tematów: można też określić kolor wyświetlanych linków */
+.topictitle { grubość czcionki: pogrubienie; rozmiar czcionki: 11px; kolor : #FFDDAA; }
+a.topictitle:link { dekoracja tekstu: brak; kolor : #FFFFCC; }
+a.topictitle:visited { text-decoration: brak; kolor : #FFFFCC; }
+a.topictitle:najechanie { text-decoration: podkreślenie; kolor : #FFFFFF; }
+
+
+/* Nazwa plakatu w viewmsg.php i viewtopic.php oraz w innych miejscach */
+.nazwa { rozmiar czcionki : 11px; kolor : #FFFFFF;}
+
+/* Lokalizacja, liczba postów, data postu itp */
+.postdetails { rozmiar czcionki : 10px; kolor : #FFFFCC; }
+
+
+/* Treść postów (treść tekstu) */
+.postbody { rozmiar czcionki : 12px; kolor: #FFFFCC; }
+a.postlink:link { dekoracja tekstu: brak; kolor : #AEAEAE; }
+a.postlink:visited { dekoracja tekstu: brak; kolor : #AEAEAE; }
+a.postlink:hover { dekoracja tekstu: brak; kolor : #FFFFFF; }
+
+
+/* Cytat i bloki kodu */
+.kod {
+	rodzina czcionek: Courier, 'Courier New', bezszeryfowa; rozmiar czcionki: 11px; kolor: #00CC33;
+	kolor tła: #616161; obramowanie: #BFBFBF; styl obramowania: solidny;
+	szerokość obramowania po lewej: 1px; szerokość górnego obramowania: 1px; obramowanie-prawo-szerokość: 1px; obramowanie-dolna-szerokość: 1px
+}
+
+.cytat {
+	rodzina czcionek: Verdana, Arial, Helvetica, bezszeryfowa; rozmiar czcionki: 11px; kolor: #FFFFCC; wysokość linii: 125%;
+	kolor tła: przezroczysty; obramowanie: #BFBFBF; styl obramowania: solidny;
+	szerokość obramowania po lewej: 1px; szerokość górnego obramowania: 1px; obramowanie-prawo-szerokość: 1px; obramowanie-dolna-szerokość: 1px
+}
+
+/* Informacje o prawach autorskich i dolnej części */
+.copyright { rozmiar czcionki: 10px; rodzina czcionek: Verdana, Arial, Helvetica, bezszeryfowa; kolor: #FFFFFF; odstępy między literami: -1px; }
+a.prawa autorskie { kolor: #DFDFDF; dekoracja tekstu: brak; }
+a.copyright:link { kolor : #DFDFDF; dekoracja tekstu: brak; }
+a.copyright:odwiedzone { kolor : #DFDFDF; dekoracja tekstu: brak; }
+a.prawa autorskie:najedź { kolor: #FFFFFF; dekoracja tekstu: podkreślenie; }
+
+
+/* Elementy formularza */
+wejście,obszar tekstowy, wybierz {
+	kolor : #FFFFFF;
+	czcionka: normalna Verdana 11px, Arial, Helvetica, bezszeryfowa;
+	kolor obramowania : #FFFFFF;
+}
+
+/* Kolor tła pól tekstowych */
+input.post, textarea.post, wybierz {
+	kolor tła : #353E2C;
+}
+
+input { wcięcie tekstu : 2px; }
+
+/* Przyciski używane do stylizacji bbCode w wiadomościach */
+wejście.przycisk {
+	kolor tła : #353E2C;
+	kolor : #FFFFCC;
+	rozmiar czcionki: 11px; rodzina czcionek: Verdana, Arial, Helvetica, bezszeryfowa;
+}
+
+/* Opcja głównego przycisku przesyłania */
+wejście.główna opcja {
+	kolor tła : #353E2C;
+	grubość czcionki : pogrubiona;
+}
+
+/* Przycisk przesyłania bez pogrubienia */
+input.liteoption {
+	kolor tła : #353E2C;
+	grubość czcionki : normalna;
+}
+
+/* To jest wiersz na stronie publikowania, który pokazuje najazd
+  linia pomocy. W rzeczywistości jest to pole tekstowe, ale jeśli ustawione tak samo
+  kolor jako tło nikt nie będzie wiedział ;)
+*/
+.helpline { kolor tła: #212121; styl obramowania: brak; }
+
+.forumline {
+border:none !important;
+background: none !important;
+margin: 0 !important;
+padding: 0 !important;
+}
+
+/* Importuj fantazyjne style tylko dla IE (NS4.x nie używa funkcji @import) */
+@import url("formIE.css");
